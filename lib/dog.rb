@@ -10,10 +10,10 @@ attr_accessor :name
   end
 
   def self.all
-    @@all.each |dog|
-    puts dog
+    @@all.each do |dog|  
+    puts dog.name
+    end
   end
-end
 
 
 
