@@ -1,4 +1,4 @@
-class Dog 
+class Dog
 attr_accessor :name
 
   @@all = []
@@ -9,9 +9,12 @@ attr_accessor :name
     @@all << self
   end
 
+  def self.all
+    @@all.each |dog|
+    puts dog
+  end
+end
 
 
-    
-  
 
 end
